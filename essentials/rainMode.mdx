@@ -1,28 +1,27 @@
 ---
 title: 'Rain Mode'
-description: 'How to use the useRainingModeEffect hook for applying a rain particle effect'
+description: 'How to use the useRainModeEffect hook for applying a rain particle effect'
 icon: 'raindrops'
 ---
 
+<img
+  className="block"
+  src="/images/rainmode.gif"
+  alt="coolmode"
+  height="600px"
+/>
+
 ## Overview
 
-The `useRainingModeEffect` hook allows you to add a raining particle effect to your buttons when using the `ClickFusion` component.
+The `useRainModeEffect` hook allows you to add a rain particle effect to your buttons when using the `ClickFusion` component.
 
 ### Usage
 
 To enable Rain Mode, set the `effect` property to "rainmode" in your `ClickFusion` component.
 
 ```ts
-<ClickFusion
-  effect="rainmode"
-  particleOptions={{
-    particle: 'customParticleImgURL', // Optional
-    size: 50, // Optional
-    speedDown: 5, // Optional
-    particleCount: 30 // Optional
-  }}
->
-  <button onClick={doSomething}>
+<ClickFusion effect="rainmode">
+  <button>
     Click Me for Rain Effect!
   </button>
 </ClickFusion>
@@ -31,3 +30,27 @@ To enable Rain Mode, set the `effect` property to "rainmode" in your `ClickFusio
 ### Customization
 
 You can customize the particle image, size, and speed using the `particleOptions` property.
+
+**Particle Options**
+
+- `particle`: (optional) URL for custom particle image
+- `size`: (optional) Size of the particle
+- `speedDown`: (optional) Downward speed of the particle
+- `particleCount`: (optional) Number of particles
+
+```tsx
+// Code example using all props for Rainmode
+<ClickFusion 
+  effect="rainmode"
+  particleOptions={{
+    particle: 'customParticleImgURL',
+    size: 50,
+    speedDown: 5,
+    particleCount: 30
+  }}
+>
+  <button>
+    Click Me for Rain Effect!
+  </button>
+</ClickFusion>
+```

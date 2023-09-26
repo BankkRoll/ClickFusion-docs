@@ -4,6 +4,13 @@ description: 'How to use the useCoolModeEffect hook for applying a cool particle
 icon: 'snowflake'
 ---
 
+<img
+  className="block"
+  src="/images/coolmode.gif"
+  alt="coolmode"
+  height="600px"
+/>
+
 ## Overview
 
 The `useCoolModeEffect` hook allows you to add a cool particle effect to your buttons when using the `ClickFusion` component.
@@ -13,16 +20,8 @@ The `useCoolModeEffect` hook allows you to add a cool particle effect to your bu
 To enable Cool Mode, set the `effect` property to "coolmode" in your `ClickFusion` component.
 
 ```ts
-<ClickFusion 
-  effect="coolmode"
-  particleOptions={{
-    particle: 'customParticleImgURL', // Optional
-    size: 40, // Optional
-    speedHorz: 5, // Optional
-    speedUp: 10 // Optional
-  }}
->
-  <button onClick={doSomething}>
+<ClickFusion  effect="coolmode">
+  <button>
     Click Me for Cool Effect!
   </button>
 </ClickFusion>
@@ -31,3 +30,27 @@ To enable Cool Mode, set the `effect` property to "coolmode" in your `ClickFusio
 ### Customization
 
 You can customize the particle image, size, and speed using the `particleOptions` property.
+
+**Particle Options**
+
+- `particle`: (optional) URL for custom particle image
+- `size`: (optional) Size of the particle
+- `speedHorz`: (optional) Horizontal speed of the particle
+- `speedUp`: (optional) Upward speed of the particle
+
+```tsx
+// Code example using all props for Coolmode
+<ClickFusion 
+  effect="coolmode"
+  particleOptions={{
+    particle: 'customParticleImgURL',
+    size: 40,
+    speedHorz: 5,
+    speedUp: 10
+  }}
+>
+  <button>
+    Click Me for Cool Effect!
+  </button>
+</ClickFusion>
+```

@@ -1,5 +1,5 @@
 ---
-title: 'Effects'
+title: 'Particle Options'
 description: 'Detailed documentation on the different effects available in ClickFusion and how to customize them.'
 icon: 'code'
 ---
@@ -20,13 +20,10 @@ The Coolmode effect comes with a variety of options to customize particles and t
 
 <Accordion title="Particle Options">
 
-**BaseParticleOptions for Coolmode**
+**Particle Options**
 
 - `particle`: (optional) URL for custom particle image
 - `size`: (optional) Size of the particle
-
-**CoolParticleOptions**
-
 - `speedHorz`: (optional) Horizontal speed of the particle
 - `speedUp`: (optional) Upward speed of the particle
 
@@ -59,13 +56,10 @@ The Rainmode effect offers options to control the falling speed and the number o
 
 <Accordion title="Particle Options">
 
-**BaseParticleOptions for Rainmode**
+**Particle Options**
 
 - `particle`: (optional) URL for custom particle image
 - `size`: (optional) Size of the particle
-
-**RainingParticleOptions**
-
 - `speedDown`: (optional) Downward speed of the particle
 - `particleCount`: (optional) Number of particles
 
@@ -98,13 +92,9 @@ The Partymode effect allows you to set the number of particles and their size.
 
 <Accordion title="Particle Options">
 
-**BaseParticleOptions for Partymode**
+**Particle Options**
 
-- `particle`: (optional) URL for custom particle image
 - `size`: (optional) Size of the particle
-
-**PartyParticleOptions**
-
 - `particleCount`: (optional) Number of particles
 
 ```tsx
@@ -112,7 +102,6 @@ The Partymode effect allows you to set the number of particles and their size.
 <ClickFusion 
   effect="partymode"
   particleOptions={{
-    particle: 'customParticleImgURL',
     size: 20,
     particleCount: 45
   }}

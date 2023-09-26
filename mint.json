@@ -11,7 +11,7 @@
     "light": "#80D6FF",
     "dark": "#0077C2",
     "background": {
-      "light": "#DBDBDB",
+      "light": "#C9C9C9",
       "dark": "#090014"
     },
     "anchors": {
@@ -41,7 +41,7 @@
       "pages": ["introduction", "quickstart"]
     },
     {
-      "group": "Components",
+      "group": "Click Fusions",
       "pages": [ "essentials/coolMode", "essentials/rainMode", "essentials/partyMode" ]
     },
     {
