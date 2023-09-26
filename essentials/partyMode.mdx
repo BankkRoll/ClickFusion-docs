@@ -1,0 +1,31 @@
+---
+title: 'Party Mode'
+description: 'How to use the usePartyModeEffect hook for applying a celebratory particle effect'
+icon: 'party-horn'
+---
+
+## Overview
+
+The `usePartyModeEffect` hook allows you to add celebratory effects like confetti to your buttons when using the `ClickFusion` component.
+
+### Usage
+
+To enable Party Mode, set the `effect` property to "partymode" in your `ClickFusion` component.
+
+```ts
+<ClickFusion
+  effect="partymode"
+  particleOptions={{
+    size: 20, // Optional
+    particleCount: 45 // Optional
+  }}
+>
+  <button onClick={doSomething}>
+    Click Me for Party Effect!
+  </button>
+</ClickFusion>
+```
+
+### Customization
+
+You can customize the size and number of particles using the `particleOptions` property.

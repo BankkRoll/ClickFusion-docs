@@ -1,0 +1,76 @@
+---
+title: 'Quickstart'
+description: 'Get started with ClickFusion and enhance your button interactions'
+---
+
+<Note>
+  You can view the latest version of the package [here](https://www.npmjs.com/package/clickfusion)
+</Note>
+
+## Setting Up Your Development Environment
+
+### Installation
+
+<CodeGroup>
+  <CodeBlock filename="Using npm">
+  npm i clickfusion
+  </CodeBlock>
+
+  <CodeBlock filename="Using bun">
+  bun add clickfusion
+  </CodeBlock>
+
+  <CodeBlock filename="Using yarn">
+  yarn add clickfusion
+  </CodeBlock>
+
+  <CodeBlock filename="Using pnpm">
+  pnpm add clickfusion
+  </CodeBlock>
+</CodeGroup>
+
+### Running the Development Server
+
+Navigate to your project directory and run the development server using your package manager of choice:
+
+<CodeGroup>
+  <CodeBlock filename="Using npm">
+  npm run dev
+  </CodeBlock>
+
+  <CodeBlock filename="Using bun">
+  bun run dev
+  </CodeBlock>
+
+  <CodeBlock filename="Using yarn">
+  yarn dev
+  </CodeBlock>
+
+  <CodeBlock filename="Using pnpm">
+  pnpm dev
+  </CodeBlock>
+</CodeGroup>
+
+
+This will start the development server, usually on port 3000. Open `http://localhost:3000` in your web browser to see your app.
+
+### Previewing Effects
+
+Now, you can start using ClickFusion in your React components. Here's a simple example:
+
+```tsx
+import React from 'react';
+import { ClickFusion } from 'clickfusion';
+
+export default function App() {
+  return (
+    <ClickFusion effect="coolmode">
+      <button>
+        Click Me!
+      </button>
+    </ClickFusion>
+  );
+}
+```
+
+Visit your app's page, and you should see the button with the coolmode effect applied when clicked.

@@ -1,0 +1,131 @@
+---
+title: 'Effects'
+description: 'Detailed documentation on the different effects available in ClickFusion and how to customize them.'
+---
+
+# Effects in ClickFusion
+
+## Table of Contents
+
+- [Coolmode Effect](#coolmode-effect)
+- [Rainmode Effect](#rainmode-effect)
+- [Partymode Effect](#partymode-effect)
+
+## Coolmode Effect
+
+### Introduction
+
+The Coolmode effect comes with a variety of options to customize particles and their behavior.
+
+### Properties
+
+<Accordion title="Particle Options">
+
+**BaseParticleOptions for Coolmode**
+
+- `particle`: (optional) URL for custom particle image
+- `size`: (optional) Size of the particle
+
+**CoolParticleOptions**
+
+- `speedHorz`: (optional) Horizontal speed of the particle
+- `speedUp`: (optional) Upward speed of the particle
+
+```tsx
+// Code example using all props for Coolmode
+<ClickFusion 
+  effect="coolmode"
+  particleOptions={{
+    particle: 'customParticleImgURL',
+    size: 40,
+    speedHorz: 5,
+    speedUp: 10
+  }}
+>
+  <button>
+    Click Me for Cool Effect!
+  </button>
+</ClickFusion>
+```
+
+</Accordion>
+
+## Rainmode Effect
+
+### Introduction
+
+The Rainmode effect offers options to control the falling speed and the number of particles.
+
+### Properties
+
+<Accordion title="Particle Options">
+
+**BaseParticleOptions for Rainmode**
+
+- `particle`: (optional) URL for custom particle image
+- `size`: (optional) Size of the particle
+
+**RainingParticleOptions**
+
+- `speedDown`: (optional) Downward speed of the particle
+- `particleCount`: (optional) Number of particles
+
+```tsx
+// Code example using all props for Rainmode
+<ClickFusion 
+  effect="rainmode"
+  particleOptions={{
+    particle: 'customParticleImgURL',
+    size: 50,
+    speedDown: 5,
+    particleCount: 30
+  }}
+>
+  <button>
+    Click Me for Rain Effect!
+  </button>
+</ClickFusion>
+```
+
+</Accordion>
+
+## Partymode Effect
+
+### Introduction
+
+The Partymode effect allows you to set the number of particles and their size.
+
+### Properties
+
+<Accordion title="Particle Options">
+
+**BaseParticleOptions for Partymode**
+
+- `particle`: (optional) URL for custom particle image
+- `size`: (optional) Size of the particle
+
+**PartyParticleOptions**
+
+- `particleCount`: (optional) Number of particles
+
+```tsx
+// Code example using all props for Partymode
+<ClickFusion 
+  effect="partymode"
+  particleOptions={{
+    particle: 'customParticleImgURL',
+    size: 20,
+    particleCount: 45
+  }}
+>
+  <button>
+    Click Me for Party Effect!
+  </button>
+</ClickFusion>
+```
+
+</Accordion>
+
+---
+
+For more advanced usage and examples, please refer to the [GitHub Repository](https://github.com/BankkRoll/ClickFusion).
