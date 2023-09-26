@@ -9,6 +9,7 @@ Welcome to the official documentation repository for ClickFusion. This repositor
 - [Official Live Documentation](https://clickfusion.mintlify.app/)
 - [Documentation Source Code](https://github.com/BankkRoll/ClickFusion-docs)
 
+
 ## About ClickFusion
 
 ClickFusion is a React-based npm package designed to enhance your UI with a variety of interactive and customizable particle effects for buttons and other clickable elements.

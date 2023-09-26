@@ -42,7 +42,11 @@
     },
     {
       "group": "Components",
-      "pages": [ "essentials/coolMode", "essentials/rainMode", "essentials/partyMode", "essentials/customEffects" ]
+      "pages": [ "essentials/coolMode", "essentials/rainMode", "essentials/partyMode" ]
+    },
+    {
+      "group": "Information",
+      "pages": [ "essentials/customEffects" ]
     }
   ],
   "footerSocials": {
