@@ -4,10 +4,11 @@ Welcome to the official documentation repository for ClickFusion. This repositor
 
 ## Quick Links
 
-- [ClickFusion GitHub Repository](https://github.com/BankkRoll/ClickFusion)
-- [ClickFusion on NPM](https://www.npmjs.com/package/clickfusion)
-- [Official Live Documentation](https://clickfusion.mintlify.app/)
-- [Documentation Source Code](https://github.com/BankkRoll/ClickFusion-docs)
+[![GitHub Package Repo](https://img.shields.io/badge/GitHub%20Package-ClickFusion-blue)](https://github.com/BankkRoll/ClickFusion)
+[![NPM Package](https://img.shields.io/badge/NPM%20Package-ClickFusion-blue)](https://www.npmjs.com/package/clickfusion)
+[![Live Docs Mintlify](https://img.shields.io/badge/Live%20Docs-ClickFusion-blue)](https://clickfusion.mintlify.app/)
+[![GitHub Docs Repo](https://img.shields.io/badge/GitHub%20Docs-ClickFusion-blue)](https://github.com/BankkRoll/ClickFusion-docs)
+
 
 
 ## About ClickFusion

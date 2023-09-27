@@ -1,0 +1,64 @@
+---
+title: 'Code Mode'
+description: 'How to use the `codemode` effect for applying a code falling effect'
+icon: 'laptop-binary'
+---
+
+<img
+  className="block"
+  src="/images/codemode.gif"
+  alt="codemode"
+/>
+
+## Overview
+
+The `codemode` effect allows you to add a code falling effect to your DOM elements when using the `ClickFusion` component.
+
+### Usage
+
+To enable Code Mode, set the `effect` property to "codemode" in your `ClickFusion` component.
+
+```ts
+<ClickFusion effect="codemode">
+  <button>
+    Click Me for Code Falling Effect!
+  </button>
+</ClickFusion>
+```
+
+### Customization
+
+You can customize the number of particles, speed, and size using the `particleOptions` property.
+
+**Particle Options**
+
+- `particleCount`: (optional) Number of particles
+- `speedDown`: (optional) Downward speed of the particles
+- `size`: (optional) Size of the particles
+- `color`: (optional) Color of the particles
+
+```tsx
+<ClickFusion 
+  effect="codemode"
+  particleOptions={{
+    particleCount: 30,
+    speedDown: 6,
+    size: 20,
+    color: 'light'
+  }}
+>
+  <button>
+    Click Me for Code Falling Effect!
+  </button>
+</ClickFusion>
+```
+
+<Frame caption="Custom codemode in Action">
+<img
+  className="block"
+  src="/images/customcodemode.gif"
+  alt="customcodemode"
+/>
+</Frame>
+
+

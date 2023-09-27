@@ -13,7 +13,7 @@ description: 'Get started with ClickFusion and enhance your button interactions'
 
 <CodeGroup>
   <CodeBlock filename="Using npm">
-  npm i clickfusion
+  npm install clickfusion
   </CodeBlock>
 
   <CodeBlock filename="Using bun">
@@ -56,21 +56,36 @@ This will start the development server, usually on port 3000. Open `http://local
 
 ### Previewing Effects
 
-Now, you can start using ClickFusion in your React components. Here's a simple example:
+Now, you can start using ClickFusion in your React components. Whether you're using TypeScript or JavaScript, we've got you covered.
 
-```tsx
-import React from 'react';
+<CodeGroup>
+  ```tsx TypeScript
+  import { ClickFusion } from 'clickfusion';
+
+  export default function App() {
+    return (
+      <ClickFusion effect="coolmode">
+        <button>
+          Click Me!
+        </button>
+      </ClickFusion>
+    );
+  }
+  ```
+
+  ```jsx JavaScript
 import { ClickFusion } from 'clickfusion';
 
-export default function App() {
-  return (
-    <ClickFusion effect="coolmode">
-      <button>
-        Click Me!
-      </button>
-    </ClickFusion>
-  );
-}
-```
+  export default function App() {
+    return (
+      <ClickFusion effect="coolmode">
+        <button>
+          Click Me!
+        </button>
+      </ClickFusion>
+    );
+  }
+  ```
+</CodeGroup>
 
 Visit your app's page, and you should see the button with the coolmode effect applied when clicked.

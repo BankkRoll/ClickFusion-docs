@@ -1,19 +1,18 @@
 ---
 title: 'Rain Mode'
-description: 'How to use the useRainModeEffect hook for applying a rain particle effect'
+description: 'How to use the `rainmode` effect for applying a rain particle effect'
 icon: 'raindrops'
 ---
 
 <img
   className="block"
   src="/images/rainmode.gif"
-  alt="coolmode"
-  height="600px"
+  alt="rainmode"
 />
 
 ## Overview
 
-The `useRainModeEffect` hook allows you to add a rain particle effect to your buttons when using the `ClickFusion` component.
+The `coolmode` effect allows you to add a rain particle effect to your DOM elements when using the `ClickFusion` component.
 
 ### Usage
 
@@ -43,7 +42,7 @@ You can customize the particle image, size, and speed using the `particleOptions
 <ClickFusion 
   effect="rainmode"
   particleOptions={{
-    particle: 'customParticleImgURL',
+    particle: 'https://pbs.twimg.com/profile_images/1680720685239287808/dVQorGnG_400x400.jpg',
     size: 50,
     speedDown: 5,
     particleCount: 30
@@ -54,3 +53,11 @@ You can customize the particle image, size, and speed using the `particleOptions
   </button>
 </ClickFusion>
 ```
+
+<Frame caption="Custom rainmode in Action">
+<img
+  className="block"
+  src="/images/customrainmode.gif"
+  alt="customrainmode"
+/>
+</Frame>

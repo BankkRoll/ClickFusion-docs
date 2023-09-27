@@ -1,0 +1,60 @@
+---
+title: 'Confetti Mode'
+description: 'How to use the `confettimode` effect for applying a confetti effect'
+icon: 'party-bell'
+---
+
+<img
+  className="block"
+  src="/images/confettimode.gif"
+  alt="confettimode"
+/>
+
+## Overview
+
+The `confettimode` effect allows you to add a confetti effect to your DOM elements when using the `ClickFusion` component.
+
+### Usage
+
+To enable Confetti Mode, set the `effect` property to "confettimode" in your `ClickFusion` component.
+
+```ts
+<ClickFusion effect="confettimode">
+  <button>
+    Click Me for Confetti Effect!
+  </button>
+</ClickFusion>
+```
+
+### Customization
+
+You can customize the number of particles, speed, and colors using the `particleOptions` property.
+
+**Particle Options**
+
+- `particleCount`: (optional) Number of particles
+- `speedDown`: (optional) Downward speed of the particles
+- `color`: (optional) Color mode of the particles
+
+```tsx
+<ClickFusion 
+  effect="confettimode"
+  particleOptions={{
+    particleCount: 20,
+    speedDown: 10,
+    color: 'blue'
+  }}
+>
+  <button>
+    Click Me for Confetti Effect!
+  </button>
+</ClickFusion>
+```
+
+<Frame caption="Custom confettimode in Action">
+<img
+  className="block"
+  src="/images/customconfettimode.gif"
+  alt="customconfettimode"
+/>
+</Frame>

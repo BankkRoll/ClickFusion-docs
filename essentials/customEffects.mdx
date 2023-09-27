@@ -1,7 +1,7 @@
 ---
 title: 'Particle Options'
 description: 'Detailed documentation on the different effects available in ClickFusion and how to customize them.'
-icon: 'code'
+icon: 'file-code'
 ---
 
 ## Table of Contents
@@ -9,6 +9,8 @@ icon: 'code'
 - [Coolmode Effect](#coolmode-effect)
 - [Rainmode Effect](#rainmode-effect)
 - [Partymode Effect](#partymode-effect)
+- [Codemode Effect](#code-mode-effect)
+- [ConfettiMode Effect](#confetti-mode-effect)
 
 ## Coolmode Effect
 
@@ -113,6 +115,79 @@ The Partymode effect allows you to set the number of particles and their size.
 ```
 
 </Accordion>
+
+## Code Mode Effect
+
+### Introduction
+
+The Code Mode effect offers options to control the falling code-like particles and their behavior.
+
+### Properties
+
+<Accordion title="Particle Options">
+
+**Particle Options**
+
+- `particleCount`: (optional) Number of particles
+- `speedDown`: (optional) Downward speed of the particles
+- `size`: (optional) Size of the particles
+- `color`: (optional) Color of the particles "light" | "dark"
+
+```tsx
+// Code example using all props for Code Mode
+<ClickFusion 
+  effect="codemode"
+  particleOptions={{
+    particleCount: 40,
+    speedDown: 5,
+    size: 10,
+    color: 'light'
+  }}
+>
+  <button>
+    Click Me for Code Falling Effect!
+  </button>
+</ClickFusion>
+```
+
+</Accordion>
+
+## Confetti Mode Effect
+
+### Introduction
+
+The Confetti Mode effect allows you to set the number of confetti particles, their falling speed, and color modes.
+
+### Properties
+
+<Accordion title="Particle Options">
+
+**Particle Options**
+
+- `particleCount`: (optional) Number of particles
+- `speedDown`: (optional) Downward speed of the particles
+- `size`: (optional) Size of the particles
+- `color`: (optional) Color mode of the particles "red", "orange", "yellow", "green", "blue", "purple"
+
+```tsx
+// Code example using all props for Confetti Mode
+<ClickFusion 
+  effect="confettimode"
+  particleOptions={{
+    particleCount: 100,
+    speedDown: 5,
+    size: 20,
+    color: 'purple'
+  }}
+>
+  <button>
+    Click Me for Confetti Effect!
+  </button>
+</ClickFusion>
+```
+
+</Accordion>
+
 
 ---
 
