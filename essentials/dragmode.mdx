@@ -1,0 +1,60 @@
+---
+title: 'Drag Mode'
+description: 'How to use the `dragmode` effect for making DOM elements draggable'
+icon: 'sitemap'
+---
+
+<img
+  className="block"
+  src="/images/dragmode.gif"
+  alt="dragmode"
+/>
+
+## Overview
+
+The `dragmode` effect allows you to make any DOM element draggable when using the `ClickFusion` component.
+
+### Usage
+
+To enable Drag Mode, set the `effect` property to "dragmode" in your `ClickFusion` component.
+
+```ts
+<ClickFusion effect="dragmode">
+  <button>
+    Drag Me!
+  </button>
+</ClickFusion>
+```
+
+### Customization
+
+You can customize the draggable area dimensions and background color using the `particleOptions` property.
+
+**Particle Options**
+
+- `width`: (optional) Width of the draggable area
+- `height`: (optional) Height of the draggable area
+- `color`: (optional) Background color of the draggable area
+
+```tsx
+<ClickFusion 
+  effect="dragmode"
+  particleOptions={{
+    width: 800,
+    height: 800,
+    color: 'light'
+  }}
+>
+  <button>
+    Drag Me!
+  </button>
+</ClickFusion>
+```
+
+<Frame caption="Custom dragmode in Action">
+<img
+  className="block"
+  src="/images/dragmode.gif"
+  alt="dragmode"
+/>
+</Frame>

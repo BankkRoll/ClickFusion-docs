@@ -129,7 +129,6 @@ The Code Mode effect offers options to control the falling code-like particles a
 **Particle Options**
 
 - `particleCount`: (optional) Number of particles
-- `speedDown`: (optional) Downward speed of the particles
 - `size`: (optional) Size of the particles
 - `color`: (optional) Color of the particles "light" | "dark"
 
@@ -139,7 +138,6 @@ The Code Mode effect offers options to control the falling code-like particles a
   effect="codemode"
   particleOptions={{
     particleCount: 40,
-    speedDown: 5,
     size: 10,
     color: 'light'
   }}
@@ -166,7 +164,6 @@ The Confetti Mode effect allows you to set the number of confetti particles, the
 
 - `particleCount`: (optional) Number of particles
 - `speedDown`: (optional) Downward speed of the particles
-- `size`: (optional) Size of the particles
 - `color`: (optional) Color mode of the particles "red", "orange", "yellow", "green", "blue", "purple"
 
 ```tsx
@@ -176,7 +173,6 @@ The Confetti Mode effect allows you to set the number of confetti particles, the
   particleOptions={{
     particleCount: 100,
     speedDown: 5,
-    size: 20,
     color: 'purple'
   }}
 >
@@ -188,6 +184,39 @@ The Confetti Mode effect allows you to set the number of confetti particles, the
 
 </Accordion>
 
+## Drag Mode Effect
+
+### Introduction
+
+The Drag Mode effect allows you to make DOM elements draggable, enhancing user interaction within your application.
+
+### Properties
+
+<Accordion title="Particle Options">
+
+**Particle Options**
+
+- `width`: (optional) Width of the draggable area
+- `height`: (optional) Height of the draggable area
+- `color`: (optional) Background color of the draggable area, "light" | "dark"
+
+```tsx
+// Code example using all props for Drag Mode
+<ClickFusion 
+  effect="dragmode"
+  particleOptions={{
+    width: 400,
+    height: 400,
+    color: 'light'
+  }}
+>
+  <button>
+    Drag Me!
+  </button>
+</ClickFusion>
+```
+
+</Accordion>
 
 ---
 

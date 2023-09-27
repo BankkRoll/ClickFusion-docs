@@ -7,14 +7,23 @@ description: "Welcome to ClickFusion: A Comprehensive Guide"
   className="hidden dark:block"
   src="/logo/dark.png"
   alt="darklogo"
-  nozoom
+  noZoom
 />
 
 <img
   className="block dark:hidden"
   src="/logo/light.png"
   alt="lightlogo"
+  noZoom
 />
+
+<div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+<img noZoom src="https://img.shields.io/github/package-json/v/BankkRoll/ClickFusion" alt="Version" />
+<img noZoom src="https://img.shields.io/npm/dt/clickfusion" alt="Downloads" />
+<img noZoom src="https://img.shields.io/github/issues/BankkRoll/ClickFusion" alt="GitHub issues" />
+<img noZoom src="https://img.shields.io/github/issues-pr/BankkRoll/ClickFusion" alt="GitHub pull requests" />
+<img noZoom src="https://img.shields.io/npm/l/clickfusion" alt="License" />
+</div>
 
 Welcome to ClickFusion, a library for React and Next.js that adds dynamic and interactive effects to your buttons and links. Our library is designed to work seamlessly across a broad range of DOM elements including Div, Button, Anchor, Paragraph, Span, and Heading. This ensures maximum flexibility when integrating ClickFusion into your projects.
 
@@ -97,6 +106,13 @@ Experiment with different effects in a test environment to find what best suits 
       className="block"
       src="/images/codemode.gif"
       alt="codemode"
+    />
+  </Tab>
+  <Tab title="Dragmode">
+    <img
+      className="block"
+      src="/images/dragmode.gif"
+      alt="dragmode"
     />
   </Tab>
 </Tabs>

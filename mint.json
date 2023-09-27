@@ -42,7 +42,7 @@
     },
     {
       "group": "Click Fusions",
-      "pages": [ "essentials/coolMode", "essentials/rainMode", "essentials/partyMode", "essentials/confettiMode", "essentials/codeMode" ]
+      "pages": [ "essentials/coolMode", "essentials/rainMode", "essentials/partyMode", "essentials/confettiMode", "essentials/codeMode", "essentials/dragmode" ]
     },
     {
       "group": "Information",
