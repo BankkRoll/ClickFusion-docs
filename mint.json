@@ -46,7 +46,7 @@
     },
     {
       "group": "Information",
-      "pages": [ "essentials/customEffects" ]
+      "pages": [ "essentials/customEffects", "playground" ]
     }
   ],
   "footerSocials": {
